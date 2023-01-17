@@ -8,7 +8,7 @@ If you like the idea click ⭐ on the repo and <a href="https://twitter.com/inte
 
 ## Note
 
-This xontrib is using [xonsh sqlite history backend](https://xon.sh/tutorial_hist.html#sqlite-history-backend) to get statistics by directories.
+This xontrib is using [xonsh sqlite history backend](https://xon.sh/tutorial_hist.html#sqlite-history-backend) to get statistics by directories you're used to run commands.
 
 ## Installation
 
