@@ -28,5 +28,5 @@ if _hist_backend == 'sqlite':
     aliases['j'] = _jump_to_dir
     del _jump_to_dir
 else:
-    print(f'xontrib-jump-to-dir: You're using {_hist_backend} for history backend. It's not supported for jump.')
-    print(f'xontrib-jump-to-dir: Feel free to contribute: https://github.com/anki-code/xontrib-jump-to-dir')
+    print(f"xontrib-jump-to-dir: You're using {_hist_backend} for history backend. It's not supported for jump.")
+    print("xontrib-jump-to-dir: Feel free to contribute: https://github.com/anki-code/xontrib-jump-to-dir")
