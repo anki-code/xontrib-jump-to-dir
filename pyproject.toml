@@ -3,7 +3,7 @@
 name = "xontrib-jump-to-dir"
 version = "0.0.1"
 license = {file = "LICENSE"}
-description = "Jump to directory by part of the path. Lightweight zero-dependency implementation of autojump or zoxide projects functionality."
+description = "Jump to used before directory by part of the path. Lightweight zero-dependency implementation of autojump or zoxide projects functionality."
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
