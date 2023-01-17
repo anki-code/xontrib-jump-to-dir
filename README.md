@@ -15,8 +15,7 @@ This xontrib is using [xonsh sqlite history backend](https://xon.sh/tutorial_his
 To install use pip:
 
 ```bash
-xpip install xontrib-jump-to-dir
-# or: xpip install -U git+https://github.com/anki-code/xontrib-jump-to-dir
+xpip install -U git+https://github.com/anki-code/xontrib-jump-to-dir
 ```
 
 ## Usage
