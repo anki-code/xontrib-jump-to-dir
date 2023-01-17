@@ -1,5 +1,5 @@
 <p align="center">
-Jump to directory by name. Lightweight zero-dependency implementation of [autojump](https://github.com/wting/autojump) or [zoxide](https://github.com/ajeetdsouza/zoxide) projects functionality. 
+Jump to directory by name. Lightweight zero-dependency implementation of <a href="https://github.com/wting/autojump">autojump</a> or <a href="https://github.com/ajeetdsouza/zoxide">zoxide</a> projects functionality. 
 </p>
 
 <p align="center">  
