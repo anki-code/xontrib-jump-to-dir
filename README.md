@@ -29,7 +29,7 @@ xontrib load jump_to_dir
 j             # Jump to most frequent directory
 j Doc         # Jump to directory with `*Doc*` in path
 j us .s       # Jump to directory with `*us*.s*` in path i.e. `/Users/usr/.ssh`
-              #                                                       ^^  ^^
+                                                                      ##  ##
 ```
 
 ## Credits
