@@ -15,7 +15,7 @@ if _hist_backend == 'sqlite':
                 WHERE cwd LIKE ? and cwd != ?
                 GROUP BY cwd ORDER BY count(*) DESC
                 LIMIT 10"""
-            for row in cur.execute(sql, (f"%{args[0] if args else ''}%", XSH.env.get('PWD'))):
+            for row in cur.execute(sql, (f"%{'%'.join(args) if args else ''}%", XSH.env.get('PWD'))):
                 if _Path(row[0]).exists():
                     __xonsh__.subproc_captured_stdout(['cd', row[0]])
                     success = True
