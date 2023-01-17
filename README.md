@@ -1,11 +1,14 @@
 <p align="center">
-Jump to the directory by name.
+Jump to directory by name. Lightweight zero-dependency implementation of [autojump](https://github.com/wting/autojump) or [zoxide](https://github.com/ajeetdsouza/zoxide) projects functionality. 
 </p>
 
 <p align="center">  
 If you like the idea click ⭐ on the repo and <a href="https://twitter.com/intent/tweet?text=Nice%20xontrib%20for%20the%20xonsh%20shell!&url=https://github.com/anki-code/xontrib-jump-to-dir" target="_blank">tweet</a>.
 </p>
 
+## Note
+
+This xontrib is using [xonsh sqlite history backend](https://xon.sh/tutorial_hist.html#sqlite-history-backend) to get statistics by directories.
 
 ## Installation
 
@@ -18,25 +21,15 @@ xpip install xontrib-jump-to-dir
 
 ## Usage
 
+```xsh
+# Check that you're using sqlite history in ~/.xonshrc
+$XONSH_HISTORY_BACKEND = 'sqlite'
 
-```bash
 xontrib load jump_to_dir
+
+j  # Jump to most frequent directory
+j Doc  # Jump to directory with "Doc" in path
 ```
-
-
-## Examples
-
-...
-
-## Known issues
-
-...
-
-## Releasing your package
-
-- Bump the version of your package.
-- Create a GitHub release (The release notes are automatically generated as a draft release after each push).
-- And publish with `poetry publish --build` or `twine`
 
 ## Credits
 
