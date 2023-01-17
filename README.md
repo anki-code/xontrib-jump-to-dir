@@ -1,5 +1,5 @@
 <p align="center">
-Jump to directory by part of the path. <br>Lightweight zero-dependency implementation of <a href="https://github.com/wting/autojump">autojump</a> or <a href="https://github.com/ajeetdsouza/zoxide">zoxide</a> projects functionality. 
+Jump to used before directory by part of the path. <br>Lightweight zero-dependency implementation of <a href="https://github.com/wting/autojump">autojump</a> or <a href="https://github.com/ajeetdsouza/zoxide">zoxide</a> projects functionality. 
 </p>
 
 <p align="center">  
