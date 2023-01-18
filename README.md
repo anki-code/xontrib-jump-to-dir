@@ -26,10 +26,16 @@ $XONSH_HISTORY_BACKEND = 'sqlite'
 
 xontrib load jump_to_dir
 
+mkdir -p /tmp/hello /tmp/world
+cd /tmp/hello
+echo 1
+cd /tmp/world
+echo 1
+cd /
+
 j             # Jump to most frequent directory
-j Doc         # Jump to directory with `*Doc*` in path
-j us .s       # Jump to directory with `*us*.s*` in path i.e. `/Users/usr/.ssh`
-                                                                      ##  ##
+j wor         # Jump to directory with `*wor*` in path i.e. `/tmp/world`
+j t he         # Jump to directory with `*t*he*` in path i.e. `/tmp/hello`
 ```
 
 ## Credits
