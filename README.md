@@ -33,9 +33,9 @@ cd /tmp/world
 echo 1
 cd /
 
-j             # Jump to most frequent directory
-j wor         # Jump to directory with `*wor*` in path i.e. `/tmp/world`
-j t he         # Jump to directory with `*t*he*` in path i.e. `/tmp/hello`
+j           # Jump to most frequent directory
+j wor       # Jump to directory with `*wor*` in path i.e. `/tmp/world`
+j t he      # Jump to directory with `*t*he*` in path i.e. `/tmp/hello`
 ```
 
 ## Credits
