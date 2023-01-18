@@ -1,7 +1,7 @@
 
 [project]
 name = "xontrib-jump-to-dir"
-version = "0.0.2"
+version = "0.0.3"
 license = {file = "LICENSE"}
 description = "Jump to used before directory by part of the path. Lightweight zero-dependency implementation of autojump or zoxide projects functionality."
 classifiers = [
