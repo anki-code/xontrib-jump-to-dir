@@ -1,3 +1,5 @@
+"""Jump to used before directory by part of the path. Lightweight zero-dependency implementation of autojump or zoxide projects functionality. """
+
 from xonsh.built_ins import XSH
 
 _hist_backend = XSH.env.get('XONSH_HISTORY_BACKEND')
