@@ -30,11 +30,13 @@ xontrib load jump_to_dir
 mkdir -p /tmp/hello /tmp/world
 cd /tmp/hello
 echo 1
+echo 2
+echo 3
 cd /tmp/world
 echo 1
 cd /
 
-j           # Jump to most frequent directory
+j           # Jump to most frequent directory i.e. `/tmp/hello` because 3 `echo` commands were executed
 j wor       # Jump to directory with `*wor*` in path i.e. `/tmp/world`
 j t he      # Jump to directory with `*t*he*` in path i.e. `/tmp/hello`
 ```
