@@ -27,7 +27,7 @@ if _hist_backend == 'sqlite':
 
         return 0 if success else 1
 
-    aliases['j'] = _jump_to_dir
+    aliases[__xonsh__.env.get('XONTRIB_JUMP_TO_DIR_SHORTCUT', 'j')] = _jump_to_dir
     del _jump_to_dir
 else:
     print(f"xontrib-jump-to-dir: You're using {_hist_backend} for history backend. It's not supported for jump.")
