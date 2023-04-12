@@ -36,16 +36,16 @@ cd /tmp/world
 echo 1
 cd /
 
-j           # Jump to most frequent directory i.e. `/tmp/hello` because 3 `echo` commands were executed
-j wor       # Jump to directory with `*wor*` in path i.e. `/tmp/world`
-j t he      # Jump to directory with `*t*he*` in path i.e. `/tmp/hello`
+j           # Jump to most frequent directory i.e. `/tmp/hello/` because 3 `echo` commands were executed
+j wor       # Jump to directory with `*wor*` in path i.e. `/tmp/world/`
+j t he      # Jump to directory with `*t*he*` in path i.e. `/tmp/hello/`
 ```
 
 Custom shortcut:
 ```xsh
 $XONTRIB_JUMP_TO_DIR_SHORTCUT = 'z'
 xontrib load jump_to_dir
-z tm  # Jump to `*tm*`
+z tm  # Jump to directory with `*tm*` in path e.g. `/tmp/`
 ```
 
 ## Credits
