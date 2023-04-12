@@ -45,7 +45,7 @@ Custom shortcut:
 ```xsh
 $XONTRIB_JUMP_TO_DIR_SHORTCUT = 'z'
 xontrib load jump_to_dir
-z tm  # Jump to directory with `*tm*` in path e.g. `/tmp/`
+z tm  # Jump to previous directory with `*tm*` in path e.g. `/tmp/`
 ```
 
 ## How it works
