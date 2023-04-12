@@ -52,6 +52,8 @@ z tm  # Jump to directory with `*tm*` in path e.g. `/tmp/`
 
 The history database has the commands you run and the directory where you was. The xontrib sorts the directories from history database by count of executed commands and filter them by mask e.g. the `j tm` command will find the directories by mask `*tm*`. Then you jump into the existing directory with the highest number of executed commands or if you already there to the previous directory by statistics. So if you have no commands that were executed in `/example` directory please avoid expectation that you can jump to it by running `j ex`.
 
+If you want to add fallback functionality to jump to any directory by partial path in case of zero result in history database (e.g. `j o lo bi` will jump to `/opt/local/bin`) feel free to create PR.
+
 ## Credits
 
 This package was created with [xontrib template](https://github.com/xonsh/xontrib-template).
