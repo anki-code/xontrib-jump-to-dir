@@ -50,7 +50,7 @@ z tm  # Jump to directory with `*tm*` in path e.g. `/tmp/`
 
 ## How it works
 
-The history database have the command you run and the directory where you was. The xontrib sort the directories from history database by count of executed commands and filter them by mask (e.g. `*tm*`). Then you jump into the existing directory with the highest number of executed commands or if you already there to the previous directory by statistics. So if you have no commands that were executed in `/example` directory please avoid expectation that you can jump to it by running `j ex`.
+The history database has the commands you run and the directory where you was. The xontrib sorts the directories from history database by count of executed commands and filter them by mask e.g. the `j tm` command will find the directories by mask `*tm*`. Then you jump into the existing directory with the highest number of executed commands or if you already there to the previous directory by statistics. So if you have no commands that were executed in `/example` directory please avoid expectation that you can jump to it by running `j ex`.
 
 ## Credits
 
