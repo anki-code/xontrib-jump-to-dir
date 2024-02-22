@@ -54,7 +54,8 @@ Custom shortcut:
 ```xsh
 $XONTRIB_JUMP_TO_DIR_SHORTCUT = 'z'
 xontrib load jump_to_dir
-z tm  # Jump to previous directory with `*tm*` in path e.g. `/tmp/`
+z tm            # Jump to previous directory with `*tm*` in path e.g. `/tmp/`
+zc git commit   #Jump to previous directory where `*git*commit*` command executed e.g. `/git/`
 ```
 
 ## How it works
