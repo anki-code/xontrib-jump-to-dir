@@ -32,8 +32,9 @@ if _hist_backend == 'sqlite':
 
         return 0 if success else 1
 
-    aliases['j'] = functools.partial(_jump_to_dir, search_column='cwd')
-    aliases['jc'] = functools.partial(_jump_to_dir, search_column='inp')
+    c = __xonsh__.env.get('XONTRIB_JUMP_TO_DIR_SHORTCUT', 'j')
+    aliases[c] = functools.partial(_jump_to_dir, search_column='cwd')
+    aliases[c+'c'] = functools.partial(_jump_to_dir, search_column='inp')
 
 elif __xonsh__.env.get('XONTRIB_JUMP_TO_DIR_WARNING', True):
     print(f"xontrib-jump-to-dir: You're using {_hist_backend} for history backend. It's not supported for jump.")
