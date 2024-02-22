@@ -65,6 +65,7 @@ If you want to add fallback functionality to jump to any directory by partial pa
 
 ## Environment variables
 
+* `XONTRIB_JUMP_TO_DIR_SHORTCUT` - shortcut string. Default `j`.
 * `XONTRIB_JUMP_TO_DIR_WARNING` - show warnings from xontrib. Default `True`.
 
 ## Credits
