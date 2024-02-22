@@ -21,12 +21,14 @@ xpip install xontrib-jump-to-dir
 
 ## Usage
 
+Init:
 ```xsh
 # Check that you're using sqlite history in ~/.xonshrc
 $XONSH_HISTORY_BACKEND = 'sqlite'
-
 xontrib load jump_to_dir
-
+```
+Jump to directory by path:
+```xsh
 mkdir -p /tmp/hello /tmp/world
 cd /tmp/hello
 echo 1
@@ -36,9 +38,16 @@ cd /tmp/world
 echo 1
 cd /
 
-j           # Jump to most frequent directory i.e. `/tmp/hello/` because 3 `echo` commands were executed
-j wor       # Jump to directory with `*wor*` in path i.e. `/tmp/world/`
-j t he      # Jump to directory with `*t*he*` in path i.e. `/tmp/hello/`
+j           # Jump to most frequent directory i.e. `/tmp/hello/` because 3 `echo` commands were executed.
+j wor       # Jump to directory with `*wor*` in path i.e. `/tmp/world/`.
+j t he      # Jump to directory with `*t*he*` in path i.e. `/tmp/hello/`.
+```
+Jump to directory by command:
+```xsh
+cd /tmp
+echo 112233
+cd /
+jc 22       # Jump to the directory where `*22*` command executed i.e. `/tmp`.
 ```
 
 Custom shortcut:
@@ -53,6 +62,10 @@ z tm  # Jump to previous directory with `*tm*` in path e.g. `/tmp/`
 The history database has the commands you run and the directory where you was. The xontrib sorts the directories from history database by count of executed commands and filter them by mask e.g. the `j tm` command will find the directories by mask `*tm*`. Then you jump into the existing directory with the highest number of executed commands or if you already there to the previous directory by statistics. So if you have no commands that were executed in `/example` directory please avoid expectation that you can jump to it by running `j ex`.
 
 If you want to add fallback functionality to jump to any directory by partial path in case of zero result in history database (e.g. `j o lo bi` will jump to `/opt/local/bin`) feel free to create PR.
+
+## Environment variables
+
+* `XONTRIB_JUMP_TO_DIR_WARNING` - show warnings from xontrib. Default `True`.
 
 ## Credits
 
